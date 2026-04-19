@@ -61,7 +61,7 @@ function addLeadingZero(value) {
 }
 
 function updateTimer({ days, hours, minutes, seconds }) {
-  daysSpan.textContent = days;
+  daysSpan.textContent = addLeadingZero(days);
   hoursSpan.textContent = addLeadingZero(hours);
   minutesSpan.textContent = addLeadingZero(minutes);
   secondsSpan.textContent = addLeadingZero(seconds);
